@@ -1,0 +1,63 @@
+﻿<Window x:Class="SandBox.SandBoxWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SandBox"
+        mc:Ignorable="d"
+        Title="SandBoxWindow" Height="234" Width="541" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--Дата рождения-->
+        <DatePicker 
+            HorizontalAlignment="Left" 
+            Margin="10,33,0,0" 
+            VerticalAlignment="Top" 
+            Width="120"
+            x:Name="datePickerDateOfBirth"/>
+        <!--Дата рождения-->
+
+
+        <!--Номер телефона-->
+        <TextBox 
+            x:Name="txtPhone"
+            HorizontalAlignment="Left" 
+            Margin="10,85,0,0" 
+            TextWrapping="Wrap"  
+            VerticalAlignment="Top" 
+            Width="120">
+        </TextBox>
+        <!--Номер телефона-->
+
+
+        <!--Почта-->
+        <TextBox 
+            x:Name="txtEmail"
+            HorizontalAlignment="Left" 
+            Margin="10,131,0,0"
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Top" 
+            Width="120"/>
+        <!--Почта-->
+
+
+        <!--Проверка-->
+        <Button 
+            Content="Проверить" 
+            HorizontalAlignment="Left" 
+            Margin="38,167,0,0" 
+            VerticalAlignment="Top" 
+            Click="Check_Click"/>
+        <!--Проверка-->
+
+        <TextBlock 
+            x:Name="txtDateNow" 
+            HorizontalAlignment="Left" 
+            Margin="223,20,0,0" 
+            TextWrapping="Wrap" 
+            Text="Сегодня: " 
+            VerticalAlignment="Top"
+            FontSize="20"
+            FontWeight="Bold"/>
+    </Grid>
+</Window>
